@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/item.css">
+    <link rel="stylesheet" href="./style/liveauction.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./Font Awesome/fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <title>Item Details 1</title>
+</head>
+<body class="bg-midnight">
+    <!-- Header -->
+    <header class="flex container">
+        <div class="axis-logo">
+            <img src="./Image/header/logo_dark.png" alt="">
+        </div>
+        <nav>
+            <ul class="flex">
+                <li class="text-white home-btn">Home <i class="fa fa-angle-down"></i>
+                    <div id="dropdown-content-home" class="dropdown-content ">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                    </div></li>
+               
+                <li class="text-white">Explore</li>
+                <li class="text-white activity-btn">Activity <i class="fa fa-angle-down"></i>
+                    <div id="dropdown-content-activity" class="dropdown-content">
+                        <a href="#home">Activity 1</a>
+                        <a href="#about">Activity 2</a>
+                        <a href="#contact">Activity 3</a>
+                    </div></li>
+                <li class="text-white">Community </li>
+                <li class="text-white pages-btn">Pages <i class="fa fa-angle-down"></i>
+                    <div id="dropdown-content-pages" class="dropdown-content">
+                        <a href="#home">page 1</a>
+                        <a href="#about">page 2</a>
+                        <a href="#contact">page 3</a>
+                    </div></li>
+                <li class="text-white">Contact</li>
+            </ul>
+        </nav>
+        <button class="wallet-btn text-white"><i class="fa fa-wallet"></i>  Wallet Connect</button>
+         <div class="screen-mode flex">
+             <div class="screenmode_night flex">
+                <img src="./Image/header/moon-2.png" alt="">
+             </div>
+             <div class="screenmode_day flex">
+                <img src="./Image/header/sun.png" alt="">
+             </div>
+         </div>
+    </header>
+    <!-- nav item -->
+    <div class="item-nav">
+        <h1 class="text-white fs-900">Item Details1</h1>
+      <div>
+          <a class="text-gray" href="#">Home /</a>
+          <a class="text-gray" href="#">Explore /</a>
+          <a class="text-white" href="#">Item Details 1</a>
+      </div>
+    </div>
+    <!-- Item -->
+    <div class="item flex ">
+        <div class="item-image">
+            <img src="./Image/Item/images-item-details.jpg" alt="">
+        </div>
+        <div class="item-text">
+            <h2 class="text-white">"The Fantasy Flower illustration"</h2>
+            <div class="flex item-text_setting">
+                <div class="flex">
+                    <div class="view flex bg-grayish-blue text-white"><i class="fa fa-eye"></i><p> 225</p></div>
+                    <div class="like flex bg-grayish-blue text-white"><i class="fa fa-heart"></i><p>100</p></div>
+                </div>
+                <div  class="flex">
+                    <div class="share text-white"><i class="fa fa-share-alt"></i></div>
+                    <div class="more text-white"><i class="fa fa-ellipsis-h"></i></div>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="item-text_copyright flex">
+                <div class="item-text_copyright--owner bg-grayish-blue flex">
+                    <div class="owned-img">
+                        <img src="./Image/Top Seller/avt-1.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="text-white">Owned by</h6>
+                    <p class="text-white"> Sara Parker</p>
+                    </div>
+                </div>
+                <div class="item-text_copyright--creator bg-grayish-blue flex">
+                    <div class="created-img">
+                        <img  src="./Image/Top Seller/avt-2.jpg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="text-white">Created by</h6>
+                    <p class="text-white">Ralph Garroway</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Description -->
+            <div class="item-text_description text-gray">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti,
+                 explicabo numquam vitae ullam minima voluptatem laboriosam aspernatur,
+                 facere harum id sunt quis libero dolorem temporibus officia, iste aperiam rerum quam!</p>
+            </div>
+            <!-- specifications -->
+            <div class="item-text_spec flex">
+                <div class="item-text_spec--bid bg-grayish-blue flex">
+                  <h5 class="text-white">Current Bid</h5>
+                  <p class="text-white"><span>4.89 ETH</span> =$12.467</p>
+                </div>
+                <div class="item-text_spec--countdown bg-grayish-blue flex">
+                    <h5 class="text-white">Countdown</h5>
+                    <p class="text-white">4:19:39</p>
+                </div>
+            </div>
+            <!-- place a bid -->
+            <div class="item-text_Bid-place flex">
+                <i class="fa fa-shopping-bag text-white"></i><p class="text-white">Place a Bid</p>
+            </div>
+            <!-- Text Navigation -->
+            <div class="item-text_nav">
+                <ul class="flex">
+                    <li><a class="text-white selecteditem" href="#">Bid History</a></li>
+                    <li><a class="text-white" href="#">Info</a></li>
+                    <li><a class="text-white" href="#">Performance</a></li>
+                </ul>
+            </div>
+            <!-- Bid history -->
+            <div class="item-text_bid-history">
+
+                <div class="bid-history-item flex">
+                    <div class="flex">
+                        <div class="bid-history-item_image">
+                            <img src="./Image/Top Seller/avt-4.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5 class="text-gray"><span class="text-white">Mason Woodward </span>place a bid</h5>
+                            <h6 class="text-gray">8 hours ago</h6>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 class="text-gray"><span class="text-white">4.89 ETH</span></h5>
+                        <h6 class="text-gray">=$16.52</h6>
+                    </div>
+                </div>
+
+                <div class="bid-history-item flex">
+                   <div class="flex">
+                        <div class="bid-history-item_image">
+                            <img src="./Image/Top Seller/avt-5.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5 class="text-gray"><span class="text-white"> Jack Ceasar </span>place a bid</h5>
+                            <h6 class="text-gray">8 hours ago</h6>
+                        </div>
+                   </div>
+                    <div>
+                        <h5 class="text-gray"><span class="text-white">4.89 ETH</span></h5>
+                        <h6 class="text-gray">=$16.52</h6>
+                    </div>
+                </div>
+
+                <div class="bid-history-item flex">
+                   <div class="flex">
+                        <div class="bid-history-item_image">
+                            <img src="./Image/Top Seller/avt-6.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5 class="text-gray"><span class="text-white">Jenifer Avanx  </span>place a bid</h5>
+                            <h6 class="text-gray">8 hours ago</h6>
+                        </div>
+                   </div>
+                    <div>
+                        <h5 class="text-gray"><span class="text-white">4.89 ETH</span></h5>
+                        <h6 class="text-gray">=$16.52</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Live Auction -->
+    <div class="live-auction flex reveal ">
+        <div class="live-auction_title container flex">
+            <h2 class=" text-white fs-400">Live Auction</h2>
+            <a class="text-white fs-400" href="#"> Explore More</a>
+        </div>
+        <div class="live-auction-container flex">
+            <div class="live-auction_item bg-grayish-blue">
+                <div class="card-img">
+                    <img src="./Image/Live Auctions/card-item8.jpg" alt="">
+                </div>
+                <div class="live-auction_item-info flex">
+                    <h3 class="text-white fs-300">hamlet contemplates</h3>
+                    <div class="bsc bg-buttom"><p class="text-white">BSC</p></div>
+                </div>
+                <div class="live-auction_item-subinfo flex">
+                    <div class="creator flex">
+                        <div class="creator-img">
+                            <img src="./Image/Top Seller/avt-6.jpg" alt="">
+                        </div>
+                        <div>
+                            <h6 class="text-gray">Creator</h6>
+                        <p class="text-white">SalvadorDali</p>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <h6 class="text-gray">Curent Bid</h6>
+                        <p class="text-white">4.89ETH</p>
+                    </div>
+                </div>
+            </div>
+            <div class="live-auction_item bg-grayish-blue">
+                <div class="card-img">
+                    <img src="./Image/Live Auctions/image-box-10.jpg" alt="">
+                </div>
+                <div class="live-auction_item-info flex">
+                    <h3 class="text-white fs-300">hamlet contemplates</h3>
+                    <div class="bsc bg-buttom"><p class="text-white">BSC</p></div>
+                </div>
+                <div class="live-auction_item-subinfo flex">
+                    <div class="creator flex">
+                        <div class="creator-img">
+                            <img src="./Image/Top Seller/avt-7.jpg" alt="">
+                        </div>
+                        <div>
+                        <h6 class="text-gray">Creator</h6>
+                        <p class="text-white">SalvadorDali</p>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <h6 class="text-gray">Curent Bid</h6>
+                        <p class="text-white">4.89ETH</p>
+                    </div>
+                </div>
+            </div>
+            <div class="live-auction_item bg-grayish-blue">
+                <div class="card-img">
+                    <img src="./Image/Live Auctions/image-box-11.jpg" alt="">
+                </div>
+                <div class="live-auction_item-info flex">
+                    <h3 class="text-white fs-300">hamlet contemplates</h3>
+                    <div class="bsc bg-buttom"><p class="text-white">BSC</p></div>
+                </div>
+                <div class="live-auction_item-subinfo flex">
+                    <div class="creator flex">
+                        <div class="creator-img">
+                            <img src="./Image/Top Seller/avt-9.jpg" alt="">
+                        </div>
+                        <div>
+                            <h6 class="text-gray">Creator</h6>
+                        <p class="text-white">SalvadorDali</p>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <h6 class="text-gray">Curent Bid</h6>
+                        <p class="text-white">4.89ETH</p>
+                    </div>
+                </div>
+            </div>
+            <div class="live-auction_item bg-grayish-blue">
+                <div class="card-img">
+                    <img src="./Image/Live Auctions/image-box-11.jpg" alt="">
+                </div>
+                <div class="live-auction_item-info flex">
+                    <h3 class="text-white fs-300">hamlet contemplates</h3>
+                    <div class="bsc bg-buttom"><p class="text-white">BSC</p></div>
+                </div>
+                <div class="live-auction_item-subinfo flex">
+                    <div class="creator flex">
+                        <div class="creator-img">
+                            <img src="./Image/Top Seller/avt-7.jpg" alt="">
+                        </div>
+                        <div>
+                            <h6 class="text-gray">Creator</h6>
+                        <p class="text-white">SalvadorDali</p>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <h6 class="text-gray">Curent Bid</h6>
+                        <p class="text-white">4.89ETH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="circle-nav flex">
+            <i class="fa fa-angle-left text-white"></i>
+            <div class="circle-nav_item selected"></div>
+            <div class="circle-nav_item"></div>
+            <div class="circle-nav_item"></div>
+            <div class="circle-nav_item"></div>
+            <i class="fa fa-angle-right text-white"></i>
+        </div>
+    </div>
+     <!-- Footer -->
+     <footer class="flex container">
+        <div class="col-1">
+            <div class="flex">
+                <img src="./Image/header/logo_dark.png" alt="">
+            </div>
+            <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci incidunt tempora, laudantium mollitia itaque a fugiat reprehenderit quae.</p>
+        </div>
+        <div class="col-2 ">
+            <ul>
+                <li class="text-white  fs-400"> My Account</li>
+                <li class="text-white">Authors</li>
+                <li class="text-white">Collection</li>
+                <li class="text-white">Author Profile</li>
+                <li class="text-white">Create Item</li>
+            </ul>
+        </div>
+        <div class="col-3 ">
+            <ul>
+                <li class="text-white fs-400">Resources</li>
+                <li class="text-white">Help and Support</li>
+                <li class="text-white">Live Auction</li>
+                <li class="text-white">Item Details</li>
+                <li class="text-white">Activity</li>
+            </ul>
+        </div>
+        <div class="col-4 ">
+            <ul>
+                <li class="text-white fs-400">Company</li>
+                <li class="text-white">Explore</li>
+                <li class="text-white">Contact Us</li>
+                <li class="text-white">our Blog</li>
+                <li class="text-white">FAQ</li>
+            </ul>
+        </div>
+        <div class="col-5">
+           
+            <h4 class="text-white">Subscribe Us</h4>
+            <div class="email flex">
+                <input type="email" id="email">
+                <button class="sumbit"><i class="fa fa-angle-double-right"></i></button>
+            </div>
+            <div class="brands flex">
+                <a href="https://youtube.com/" target="_black"><img src="./axies-images/Brand/youtube.png" alt=""></a>
+                <a href="https://twitter.com/" target="_black"><img src="./axies-images/Brand/twitter.png" alt=""></a>
+                <a href="https://discord.com/" target="_black"><img src="./axies-images/Brand/discord.png" alt=""></a>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>

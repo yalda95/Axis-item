@@ -1,0 +1,125 @@
+:root {
+    --clr-primary-midnight-blue: hsl(240, 22%, 10%);
+    --clr-primary-grayish-blue:hsl(240, 13%, 24%);
+    --clr-secondary-text-white: hsl(0, 0%, 93%);
+    --clr-secondary-text-gray: hsl(0, 0%, 56%);
+    --clr-secondary-border-galaxy: hsl(244, 47%, 23%);
+    --clr-secondary-buttom-galaxy: hsl(245, 97%, 62%);
+    --gradient-color: linear-gradient(45deg, #6450e6, #8b24a0);
+
+    /* font size */
+
+    --fs-300:1.rem;
+    --fs-400:1.5rem;
+    --fs-600:2.75rem;
+    --fs-900:3.25rem;
+
+    /* font families */
+    --ff-poppins: 'Poppins', sans-serif;
+    --ff-lato:'lato', sans-serif;
+
+}
+
+/* Box sizing */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* Reset margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+   margin:0;
+}
+
+/* SetUp the Body */
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    font-family: 'lato', sans-serif;
+}
+
+/* make images easrier to work with  */
+
+img{
+    max-width: 100%;
+    display: block;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+    
+/* make form elements easier to work with  */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animation for people who'vr turned them off */
+
+@media (prefers-reduced-motion: reduce ) {
+    *,
+    *::after,
+    *::before {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+}
+
+/* ----------------- */
+/*  Utility classes */
+/* ----------------- */
+
+.flex {
+    display: flex;
+    gap:var(--gap,1rem)
+}
+.grid {
+    display: grid;
+}
+
+.container {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline:2rem;
+}
+
+/* colors */
+
+.bg-midnight { background-color:var(--clr-primary-midnight-blue);    }
+.bg-grayish-blue {    background-color:var(--clr-primary-grayish-blue); }
+.bg-buttom {    background-color:var(--clr-secondary-buttom-galaxy); }
+
+.text-white { color:var(--clr-secondary-text-white)}
+.text-gray { color:var(--clr-secondary-text-gray)}
+
+/* typography */
+
+.fs-300 {font-size: var(--fs-300);}
+.fs-400 {font-size: var(--fs-400);}
+.fs-600 {font-size: var(--fs-600);}
+.fs-900 {font-size: var(--fs-900);}
+
+.uppercase { text-transform: uppercase ;}
+

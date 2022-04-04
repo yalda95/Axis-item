@@ -1,0 +1,133 @@
+.item {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem 0;
+    
+}
+.item-image img {
+    border-radius: 1rem;
+}
+.item-text {
+    width: 40%;
+}
+.item-text_setting {
+    justify-content: space-between;
+}
+.view,
+.like {
+    width: 4rem;
+    height: 1.5rem;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.item-text_copyright {
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.item-text_copyright--owner,
+.item-text_copyright--creator {
+    width: 50%;
+    height: 4rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+.owned-img img,
+.created-img img {
+    width: 3.5rem;
+    border-radius: 1rem;
+}
+.item-text_spec {
+    justify-content: space-between;
+    margin: 1rem 0;
+
+}
+.item-text_spec--bid,
+.item-text_spec--countdown {
+    width: 50%;
+    height: 2rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.item-text_Bid-place {
+    width: 100%;
+    height: 2rem;
+    border: 0.1rem solid #eee;
+    border-radius: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    cursor: pointer;
+}
+.item-text_Bid-place:hover {
+    background: var(--clr-secondary-buttom-galaxy)
+}
+.item-text_nav ul {
+    width: 100%;
+    height: 2rem;
+    padding-left: 0;
+
+}
+.item-text_nav ul li a.selecteditem {
+    color: purple;
+}
+.item-text_nav ul li:hover{
+  border-bottom: 0.1rem solid purple;
+}
+.bid-history-item {
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.bid-history-item span {
+    font-weight: bold;
+}
+.bid-history-item_image img {
+    width: 3rem;
+    border-radius: 1rem;
+}
+@media (max-width:1300px) {
+    .item {
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-image  {
+        width: 70%;
+        margin: 5rem 0;
+        border-radius: 1rem;
+        justify-self: center;
+    }
+    .item-text {
+        width: 70%;
+    }
+   
+}
+@media (max-width:1100px) {
+    .item-text_copyright {
+        flex-direction: column;
+    }
+    .item-text_copyright--owner,
+    .item-text_copyright--creator {
+    width: 100%;
+    height: 4rem;
+    }
+    .item-text_spec {
+        flex-direction: column;
+    
+    }
+    .item-text_spec--bid,
+    .item-text_spec--countdown {
+    width: 100%
+    }
+}

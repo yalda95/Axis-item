@@ -1,0 +1,106 @@
+.live-auction {
+    flex-direction: column;
+    align-items:center;
+    margin-top: 10rem;
+    background: rgb(7, 7, 17);
+}
+.live-auction_title {
+    width: 100%;
+    height: 7rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.live-auction_title a {
+    height: 3rem;
+    background: -webkit-linear-gradient(hsl(245, 100%, 79%),var(--clr-secondary-border-galaxy));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.live-auction_title a:hover {
+    color: var(--clr-secondary-buttom-galaxy);
+    border-bottom: 0.1rem solid var(--clr-secondary-buttom-galaxy);
+}
+.live-auction-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 1rem;
+    
+}
+.live-auction_item {
+    width: 20%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.live-auction_item:hover {
+    animation: acutionItem 1.5s ease 0s 1 normal forwards;
+}
+@keyframes acutionItem {
+    0% {
+      transform: translateY(0);
+    }
+  
+    100% {
+      transform: translateY(-50px);
+    }
+  }
+.card-img img {
+    border-radius: 0.5rem;
+    
+}
+.live-auction_item-info {
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.live-auction_item-subinfo {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.bsc {
+    width: 4rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+.creator-img img {
+    width: 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.circle-nav {
+    margin: 1.5rem;
+    cursor: pointer;
+}
+.circle-nav_item {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    border: 0.1rem solid white;
+}
+.circle-nav_item:not(.selected):hover {
+    background: gray;
+    transition: all 0.5s ease;
+}
+.selected {
+    background: white;
+}
+
+
+@media (max-width:1100px) {
+    .live-auction-container {
+        flex-direction: column;
+        
+    }
+    .live-auction_item {
+        width: 100%;
+    }
+}
+@media (max-width:600px) {
+   
+    .live-auction_item {
+        width: 70%;
+    }
+}
